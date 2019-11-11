@@ -25,32 +25,13 @@
                 margin: 50px auto;
             }
             
-            .video img {
+            iframe {
                 width: 100%;
-            }
-            
-            .video span:nth-child(1) {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%,-50%);
-                font-size: 100px;
-                text-shadow: 0 0 10px #000000;
-                cursor: pointer;
-                transition: transform .3s;
-            }
-            
-            .video span:nth-child(1):hover {
-                transform: translate(-50%,-50%) scale(1.2);
-            }
-            
-            .video iframe {
-                display: none;
-                width: 100%;
+                height: 100%;
                 border: 0;
             }
             
-            video:focus {
+            iframe:focus {
                 outline: none;
             }
             
@@ -74,21 +55,15 @@
         <div id="content">
             
             <div class="video">
-                <span>&#9654;</span>
-                <img src="assets/img/mine.jpg">
-                <video src="assets/vid/mine.mp4" controls></video>
+                <iframe src="https://mega.nz/embed#!zKpBgQpI!N1fTBrS3sKUy32IbsPrSAIRAVO5H7VbJmR1JDfH95SE" allowfullscreen></iframe>
             </div>
             
             <div class="video">
-                <span>&#9654;</span>
-                <img src="assets/img/daddyaf.jpg">
                 <iframe src="https://mega.nz/embed#!fPp1SAKa!kbx5k9z2sm0Sda8HMRmu8LbBWxFIK7x99K_WgucN6c8" allowfullscreen></iframe>
             </div>
             
             <div class="video">
-                <span>&#9654;</span>
-                <img src="assets/img/candy.jpg">
-                <video src="assets/vid/candy.mp4" controls></video>
+                <iframe src="https://mega.nz/embed#!nDgn3azS!I8TlxhX3hODL3bvZE0OnkLYL8kpV_SWEDmnu1ig6TR0" allowfullscreen></iframe>
             </div>
             
         </div>
