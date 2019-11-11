@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Vídeos &#124; Slayyyter</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap">
+        <link rel="stylesheet" href="assets/style.css">
+        <link rel="icon" href="assets/img/favicon.png">
+        <script src="assets/js/jquery.js"></script>
+        <script src="assets/js/video.js"></script>
+        <style>
+            
+            #content {
+                width: 100%;
+                max-width: 100%;
+            }
+            
+            .video {
+                display: block;
+                position: relative;
+                width: 800px;
+                height: 450px;
+                max-width: calc(100% - 100px);
+                max-height: calc((100vw - 100px)*9/16);
+                margin: 50px auto;
+            }
+            
+            .video img {
+                width: 100%;
+            }
+            
+            .video span:nth-child(1) {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                font-size: 100px;
+                text-shadow: 0 0 10px #000000;
+                cursor: pointer;
+                transition: transform .3s;
+            }
+            
+            .video span:nth-child(1):hover {
+                transform: translate(-50%,-50%) scale(1.2);
+            }
+            
+            .video video {
+                display: none;
+                width: 100%;
+            }
+            
+            video:focus {
+                outline: none;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <a href="/"><div id="logo">
+            <img id="whiteimg" src="assets/img/white.png">
+            <img id="logoimg" src="assets/img/logo.png">
+        </div></a>
+        <div id="menu">
+            <div></div>
+            <a href="/">Home</a>
+            <a href="contactos.html">Contactos</a>
+            <a href="galeria.html">Galeria</a>
+            <a id="active" href="#">Vídeos</a>
+            <a href="mixtape.html">Mixtape</a>
+            <a href="discografia.html">Discografia</a>
+            <div></div>
+        </div>
+        <div id="content">
+            
+            <div class="video">
+                <span>&#9654;</span>
+                <img src="assets/img/mine.jpg">
+                <video src="assets/vid/mine.mp4" controls></video>
+            </div>
+            
+            <div class="video">
+                <span>&#9654;</span>
+                <img src="assets/img/daddyaf.jpg">
+                <video src="assets/vid/daddyaf.mp4" controls></video>
+            </div>
+            
+            <div class="video">
+                <span>&#9654;</span>
+                <img src="assets/img/candy.jpg">
+                <video src="assets/vid/candy.mp4" controls></video>
+            </div>
+            
+        </div>
+        <footer>
+            <span>Bernardo Silva &#124; Nº3 &#124; 11º14 &#124; Redes de Comunicação</span>
+        </footer>
+    </body>
+</html>
