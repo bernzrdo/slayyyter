@@ -1,0 +1,154 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.3em;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hotpink;
+  border: 0;
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+  border: 0;
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* ---- CABEÇALHO ---- */
+
+#logo {
+    margin: 15px;
+    text-align: center;
+}
+
+#logo img {
+    height: 100px;
+}
+
+#whiteimg {
+    position: absolute;
+    animation: shine 5s infinite linear;
+}
+
+@keyframes shine {
+    0%   {clip-path: polygon(-10% 0, 0% 0%, -10% 100%, -20% 100%);}
+    30%  {clip-path: polygon(110% 0, 120% 0%, 110% 100%, 100% 100%);}
+    100% {clip-path: polygon(110% 0, 120% 0%, 110% 100%, 100% 100%);}
+}
+
+#menu {
+    text-align: center;
+}
+
+#menu div {
+    height: 1px;
+    margin: 10px 0;
+    width: 100%;
+    background-color: #fff;
+}
+
+#menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 10px;
+    transition: color .3s, background-color .3s;
+}
+
+#active {
+    background-color: #2e0017;
+}
+
+#menu a:hover {
+    color: #000;
+    background-color: hotpink;
+}
+
+/* ---- CONTEUDO ---- */
+
+#content {
+    width: 800px;
+    max-width: calc(100% - 100px);
+    margin: 0 auto;
+}
+
+p {
+    text-align: justify;
+}
+
+b {
+    color: hotpink;
+}
+
+a {
+    color: #fff;
+    transition: color .3s;
+}
+
+a:hover {
+    color: hotpink;
+}
+
+h1 {
+    font-size: 1.2em;
+    margin: 0;
+    color: hotpink;
+}
+
+button {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1em;
+    background-color: hotpink;
+    padding: 15px;
+    width: 300px;
+    text-align: left;
+    border: 2px solid hotpink;
+    margin: 10px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+button:hover {
+    background-color: #000;
+    color: hotpink;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* ---- RODAPÉ ---- */
+
+footer {
+    width: 100%;
+    border-top: 1px solid #888;
+}
+
+footer span {
+    display: block;
+    text-align: center;
+    margin: 50px;
+    font-size: .7em;
+    color: #888;
+}
